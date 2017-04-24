@@ -1,0 +1,505 @@
+/* Master Styles */
+h1 {
+  color: #369; 
+  font-family: Arial, Helvetica, sans-serif;   
+  font-size: 250%;
+}
+h2, h3 { 
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;   
+  font-weight: lighter;
+}
+body { 
+  margin: 2em; 
+}
+body, input[text], button { 
+  color: black; 
+  font-family: Cambria, Georgia; 
+}
+.bar {
+  opacity:0.3;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+/*.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}*/
+
+.tick text{
+    fill:black;
+    font: 10px sans-serif;
+}
+
+.legend text{
+    fill:black !important;
+    stroke:none !important;
+}
+
+.tick line{
+    fill:black;
+    stroke:black;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+
+.tooltip {
+  line-height: 0.5;
+  font-weight: bold;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  z-index: 9999;
+}
+
+
+text.shadow {
+  stroke: #fff;
+  stroke-width: 2.5px;
+  opacity: 0.9;
+}
+
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 50px;					
+    height: 14px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: #333;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+
+.guideline {
+  margin-right: 100px;
+  float: right;
+}
+
+.arc path {
+  stroke: #fff;
+}
+ .arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+
+.chart div {
+  font: 10px sans-serif;
+     background-color: steelblue;
+  text-align: right;
+    padding: 3px;
+  margin: 1px;
+  color: white;
+ }
+
+/*.tick line{
+    opacity: 0.1;
+  }*/
+  td, th {
+    padding: 1px 4px;
+}
+
+ .tick {
+    stroke: lightgrey;
+    stroke-opacity: 0.2;
+    shape-rendering: crispEdges;
+}
+
+/* Dash  - Starts*/
+
+body{
+	margin:0;
+	padding:0;
+	/*background-color:#CCC;*/
+	font-family:Tahoma, Geneva, sans-serif;
+}
+header, footer{
+	background-color:#fff;
+	padding:20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	overflow:hidden;
+}
+.logo{
+	font-size: 14px;
+    background: url(logo.jpg) no-repeat 0 0;
+    height: 62px;
+    display: block;
+    background-size: auto 62px;
+    overflow: hidden;
+    text-indent: -999px;
+	width:60px;
+	float:left;
+}
+#content{
+	margin:20px 20px 50px;
+	overflow:hidden;
+}
+
+.text{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+.cols{
+	float:left;
+	width:47%;
+	background-color:#FFF;
+	margin:0.5%;
+	border-radius:5px;
+	min-height:300px;
+	padding:40px 1% 1%;
+	position:relative;
+}
+.cols h1{
+	background-color:#333;
+	color:#FFF;
+	font-size:12px;
+	font-weight:normal;
+	margin:0;
+	padding:8px 5px;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius: 5px 5px 0 0;
+	right:0;
+}
+.cols.wid60{
+	width:57%
+}
+.cols.wid50{
+	width:47%
+}
+.cols.wid40{
+	width:37%
+}
+.place_holder{
+	text-align:center;
+	font-size:11px;
+	color:#ccc;
+}
+footer{
+	font-size:10px;
+	color:#333;
+	text-align:center;
+	position:fixed;
+	bottom:0;
+	right:0;
+	left:0;
+	padding:13px;
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+  color:black;
+}
+
+
+
+.arc path {
+  stroke: #fff;
+}
+
+.product-logo {
+    float: right;
+    color: #999;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: right;
+}
+
+.product-logo b {
+    color: #000;
+}
+
+.product-logo i {
+    display: block;
+    font-size: 50%;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.text-center{ text-align: center}
+.text-25{ font-size:30px;
+     color:black;}
+/* Creates a small triangle extender for the tooltip */
+/*.tooltip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}*/
+/* 
+ * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
+ * for the full set of master styles used by the documentation samples
+ */
+/* Dash  - Ends*/
+
+body{
+	font:sans-serif;
+	font-size:12px;
+}
+ul, li{
+	padding:0;
+	margin:10px 0;
+	list-style:none;
+}
+li{
+	position:relative;
+	overflow:hidden;
+}
+label{
+	display:block;
+	color:#0BADD2;
+}
+input,select{
+	width:100%;
+	padding:5px;
+    box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	height:30px;
+}
+input[type="color"], input[type="checkbox"]{
+	width:14px;
+	padding:0;
+	border:0;
+	height:14px;
+	margin:0;
+}
+input[type="color"]{
+	background-color:transparent;
+	height:20px;
+}
+input[type="color"]+label, input[type="checkbox"]+label{
+	display:inline-block;
+}
+button{
+	background-color:#0BADD2;
+	color:#fff;
+	font-size:90%;
+	border:none;
+	padding:5px 10px;
+	border-radius:3px;
+}
+.modal{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(0, 0, 0, 0.3);
+	display:none;
+	transition:2s display;
+}
+.modal.show{
+	display:block;
+    z-index: 999999;
+}
+.modal .dialog{
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius:5px;
+	background-color:#FFF;
+	margin:2% auto;
+	max-width:480px;
+    z-index: 99;
+}
+.modal.long .dialog{
+	max-width:768px;
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer{
+    padding: 10px;
+	overflow:auto;
+	max-height:360px;
+}
+.modal .modal-header{
+	background:#333;
+    border-radius: 5px 5px 0 0;
+    font-size: 120%;
+    color: #fff;
+    font-weight: bold;
+}
+.modal .modal-footer{
+	text-align:right;
+}
+.ico{
+	width:23px;
+	height:23px;
+	display:block;
+	overflow: hidden;
+    text-indent: -999px;
+	background:no-repeat 50% 50%;
+	background-size:16px;
+}
+.icosetting{
+	background-image:url(images/icon-setting.png);
+}
+.icodelete{
+	background-image:url(images/icon-trash.png);
+    width:17px;
+	height:16px;
+	display:block;
+	overflow: hidden;
+    text-indent: -999px;
+	background-size:16px;
+}
+.btn-wrapper{
+        position:absolute;
+        top:3px;
+        right:30px;
+}
+.btn-wrapper-del{
+        position:absolute;
+        top:7px;
+        right:5px;
+}
+#btn-modal-1{
+	position:relative;
+	display:block;
+	width:23px;
+}
+#btn-modal-1:hover .btn-menu{
+	display:block;	
+}
+.btn-menu{
+	position:absolute;
+	top:0px;
+	right:18px;
+	background-color:#ccc;
+	box-shadow:0 0 2px #333;
+	margin:5px;
+	color:#333;
+	padding:0 10px;
+	white-space:nowrap;
+	display:none;
+    border-radius: 3px;
+    font-size: 75%;
+}
+
+.modal.long .tab article{
+	width:23%;
+	/*margin:10px 1% !important;*/
+}
+.tab article{
+	float:left;
+	width:48%;
+	margin:10px 4% 10px 0;
+}
+.tab article:nth-child(2n){
+	margin-right:0;
+}
+.modal .tab article.clear{
+	width:0%;
+	margin:0 !important;
+	clear:both;
+}
+.tab div {
+    position: relative;
+    padding-left: 24px;
+    overflow: hidden;
+}
+.tab .rowSelect{
+    position: absolute;
+    left: 0px;
+    top: 21px;
+}
+/*header{
+	background-color:#333;
+	color:#fff;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:95px;
+}
+footer{
+	background-color:#333;
+	color:#fff;
+	font-size:50%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:35px;
+}*/
+section.widgetWrapper{
+	margin:0px 0 40px;
+	overflow:hidden;
+}
+.widget-container{
+	/*background-color:#ccc;*/
+	width:24%;
+	height:300px;
+	margin:0.5%;
+	float:left;
+	border:1px solid #fff;
+	box-shadow:0 0 5px #333;
+	box-sizing:border-box;
+	border-radius:3px;
+}
+.widget-container.full{
+	width:99%;
+}
+.widget-container.large{
+	width:74%;
+}
+.widget-container.medium{
+	width:49%;
+}
+.widget-container.small{
+	width:24%;
+}
+article.new{
+	background:#666 url(images/icon-add.png) 50% 50% no-repeat;
+	background-size:75% 75%;
+	color:#666;
+	cursor:pointer;
+	text-indent:9999px;
+	overflow:hidden;
+	white-space:nowrap;
+	opacity:0.3;
+	transition:0.5s opacity;
+}
+section article:not(:nth-child(1)).new{
+	width:40px;
+	height:40px;
+	background-size:50% 50%;
+}
+article.new:hover{
+	opacity:0.8;
+}
+.comments{
+    word-wrap: break-word;
+    padding-left: 10px;
+}
+
+.svgchart{
+    width:100%;
+}
+
+.title{
+    height:14px;
+}
