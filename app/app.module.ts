@@ -16,7 +16,6 @@ import {DataService} from './service/data.service';
 import {WDashboardComponent} from './wdashboard.component';
 import {HttpModule} from '@angular/http';
 import { FormsModule } from '@angular/forms';
-import {DataService} from './service/data.service';
 
 
 @NgModule({
