@@ -1,0 +1,8 @@
+[
+	{ "Region" : "Deveoloped Regions","1990" : 98,"2015" : 99, "Difference":1},
+	{ "Region" : "Eastern Asia without China","1990" : 	96	,"2015" : 98	, "Difference":2},
+	{ "Region" : "Caucasus and Central Asia","1990" : 		87,"2015" : 	89	, "Difference":	2},
+	{ "Region" : "Northern Africa","1990" : 			87,"2015" : 		93	, "Difference":	6},
+	{ "Region" : "Oceania","1990" :	50,"2015" : 			56, "Difference":		6},
+	{ "Region" : "Southern Asia without India","1990" :		79,"2015" :  89, "Difference":	10}
+]
