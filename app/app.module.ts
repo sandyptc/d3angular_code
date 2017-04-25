@@ -1,6 +1,8 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {WChartContainerComponent} from './wchartcontainer.component';
+import {WTableContainerComponent} from './wtablecontainer.component';
+import {WTableComponent} from './wtable.component';
 import { WSvgChartContainer } from './wsvgchartcontainer.component';
 import { WAxisComponent } from './waxis.component';
 import { WColumnSeriesComponent } from './wcolumnseries.component';
@@ -21,9 +23,9 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   imports: [ BrowserModule, FormsModule, HttpModule ],
   declarations: [ WDashboardComponent, WSvgChartContainer, WChartContainerComponent, WAxisComponent,
-				  WColumnSeriesComponent, WRowSeriesComponent, WLineSeriesComponent, 
+				          WColumnSeriesComponent, WRowSeriesComponent, WLineSeriesComponent, 
                   WAreaSeriesComponent, WPieSeriesComponent, WPieDonutSeriesComponent, WLegendComponent,
-                  WComboSeriesComponent, WScatterSeriesComponent],
+                  WComboSeriesComponent, WScatterSeriesComponent, WTableContainerComponent, WTableComponent],
   providers: [ DataService ],
   bootstrap: [ WDashboardComponent ]
 })

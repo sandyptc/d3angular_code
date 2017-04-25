@@ -9,6 +9,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var wchartcontainer_component_1 = require("./wchartcontainer.component");
+var wtablecontainer_component_1 = require("./wtablecontainer.component");
+var wtable_component_1 = require("./wtable.component");
 var wsvgchartcontainer_component_1 = require("./wsvgchartcontainer.component");
 var waxis_component_1 = require("./waxis.component");
 var wcolumnseries_component_1 = require("./wcolumnseries.component");
@@ -35,7 +37,7 @@ AppModule = __decorate([
         declarations: [wdashboard_component_1.WDashboardComponent, wsvgchartcontainer_component_1.WSvgChartContainer, wchartcontainer_component_1.WChartContainerComponent, waxis_component_1.WAxisComponent,
             wcolumnseries_component_1.WColumnSeriesComponent, wrowseries_component_1.WRowSeriesComponent, wlineseries_component_1.WLineSeriesComponent,
             wareaseries_component_1.WAreaSeriesComponent, wpieseries_component_1.WPieSeriesComponent, wpiedonutseries_component_1.WPieDonutSeriesComponent, wlegend_component_1.WLegendComponent,
-            wcomboseries_component_1.WComboSeriesComponent, wscatterseries_component_1.WScatterSeriesComponent],
+            wcomboseries_component_1.WComboSeriesComponent, wscatterseries_component_1.WScatterSeriesComponent, wtablecontainer_component_1.WTableContainerComponent, wtable_component_1.WTableComponent],
         providers: [data_service_1.DataService],
         bootstrap: [wdashboard_component_1.WDashboardComponent]
     })

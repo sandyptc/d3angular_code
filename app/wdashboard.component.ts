@@ -2,6 +2,7 @@ import {Component,Input,Injectable,Inject,ElementRef,OnChanges,ViewChild,OnInit,
 import {Meta,XAxis,YAxis,Axis,DataSeries,Widget} from './helpers/chartdtos';
 import {ScaleUtil} from './helpers/chartutils';
 import {WChartContainerComponent} from './wchartcontainer.component';
+import {WTableContainerComponent} from './wtablecontainer.component';
 import {DataProcessor} from './helpers/chartutils';
 
 
@@ -14,7 +15,12 @@ import * as d3 from 'd3';
         <article *ngFor="let list of widgetlist;let idx = index" class={{list.styleclass}}  >         
 			<h1 class="title">{{list.chartTitle}}</h1><div class="btn-wrapper-del">
 			<span id={{idx}} class="icodelete" (click)="deleteChart($event)"></span></div>
-			<wchartcontainer #chart></wchartcontainer>
+            <div *ngIf="list.chartType != 'table'">
+                <wchartcontainer #wchart></wchartcontainer>
+            </div>
+            <div *ngIf="list.chartType == 'table'">
+                <wtablecontainer #wchart></wtablecontainer>
+            </div>
 		</article>
 	    <article id="addWidget" #addWidget class="new empty widget-container" (click)="addDialog($event)">ADD NEW</article>
     </section>
@@ -38,6 +44,7 @@ import * as d3 from 'd3';
                         <option value="pie">Pie Chart</option>
                         <option value="donutpie">Donut Chart</option>
                         <option value="scatter">Scatter Chart</option>
+                        <option value="table">Table</option>
                     </select>
                 </article>
             	<article>

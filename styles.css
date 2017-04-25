@@ -503,3 +503,15 @@ article.new:hover{
 .title{
     height:14px;
 }
+
+tr {
+	background-color: #ff0000;
+}
+
+td {
+	background-color: #109618;
+}
+
+table {
+	color: #FFFFFF;
+}
