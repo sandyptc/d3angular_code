@@ -9,6 +9,7 @@ import {WLegendComponent} from './wlegend.component';
 import {WPieDonutSeriesComponent} from  './wpiedonutseries.component';
 import {WComboSeriesComponent} from './wcomboseries.component';
 import {WScatterSeriesComponent} from './wscatterseries.component';
+import {WStackedColumnSeriesComponent} from './wstackedcolumnseries.component';
 import { Axis,XAxis,YAxis,Meta,DataSeries} from './helpers/chartdtos';
 import {DataService} from './service/data.service';
 import * as d3 from 'd3';
@@ -29,6 +30,10 @@ import * as d3 from 'd3';
                        <g class="wpiedonutseries" [metadata]="metadata" [width]="width" [height]="height" [metaseries]="donutseries" ></g>
                        <g class="wcomboseries"  (axismovementevent)="axisMovement($event);"   (tooltipevent)="tooltipUpdated($event)" [width]="width" [height]="height" [scale]="scale" [metadata]="metadata"  [metaseries]="comboseries" ></g>
                        <g class="wscatterseries" (axismovementevent)="axisMovement($event);" [width]="width" [height]="height" [scale]="scale" [metadata]="metadata"  [metaseries]="scatterseries" ></g>
+                       <g class="wstackedcolumnseries" [height]="height" 
+                            [scale]="scale" [metadata]="metadata"  
+                            [metaseries]="stackedseries">
+                       </g>
                     </g>
                 </g>
               </svg>
@@ -59,6 +64,7 @@ export class WSvgChartContainer implements OnChanges{
     donutseries:DataSeries[]=new Array();
     comboseries:DataSeries[]=new Array();
     scatterseries:DataSeries[]=new Array();
+    stackedseries:DataSeries[]=new Array();
     svgwidth:number   =  800 ; svgheight:number  =  400;
     svgwidth1:number   =  320;svgheight1:number  = 25;
     transform:string;
@@ -94,6 +100,7 @@ export class WSvgChartContainer implements OnChanges{
         this.donutseries = this.metadata.dataSeriesList.filter((series)=>{return series.charttype=="donutpie" && series.showseries });
         this.comboseries = this.metadata.dataSeriesList.filter((series)=>{return series.charttype=="combo" && series.showseries});
         this.scatterseries = this.metadata.dataSeriesList.filter((series)=>{return series.charttype=="scatter" && series.showseries});
+        this.stackedseries = this.metadata.dataSeriesList.filter((series)=>{return series.charttype=="stacked" && series.showseries});
     }
     
     

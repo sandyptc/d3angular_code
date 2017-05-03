@@ -16,6 +16,7 @@ import {WComboSeriesComponent} from './wcomboseries.component';
 import {WScatterSeriesComponent} from './wscatterseries.component';
 import {DataService} from './service/data.service';
 import {WDashboardComponent} from './wdashboard.component';
+import {WStackedColumnSeriesComponent} from './wstackedcolumnseries.component';
 import {HttpModule} from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
@@ -23,9 +24,9 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   imports: [ BrowserModule, FormsModule, HttpModule ],
   declarations: [ WDashboardComponent, WSvgChartContainer, WChartContainerComponent, WAxisComponent,
-				          WColumnSeriesComponent, WRowSeriesComponent, WLineSeriesComponent, 
-                  WAreaSeriesComponent, WPieSeriesComponent, WPieDonutSeriesComponent, WLegendComponent,
-                  WComboSeriesComponent, WScatterSeriesComponent, WTableContainerComponent, WTableComponent],
+				          WColumnSeriesComponent, WRowSeriesComponent, WLineSeriesComponent, WAreaSeriesComponent, 
+                  WPieSeriesComponent, WPieDonutSeriesComponent, WLegendComponent, WComboSeriesComponent, 
+                  WScatterSeriesComponent, WTableContainerComponent, WTableComponent, WStackedColumnSeriesComponent],
   providers: [ DataService ],
   bootstrap: [ WDashboardComponent ]
 })

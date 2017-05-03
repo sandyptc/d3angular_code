@@ -29,6 +29,10 @@ var ScaleUtil = (function () {
             scatter: {
                 xaxis: "auto",
                 yaxis: "auto"
+            },
+            stacked: {
+                xaxis: "ordinal",
+                yaxis: "auto"
             }
         };
     }

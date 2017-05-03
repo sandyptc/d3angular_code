@@ -50,6 +50,7 @@ var WChartContainerComponent = (function () {
             }
         }
         this.metadata = this.dataProcessor.createSeries(this.dataService, metadata);
+        console.log("Metadata=", metadata);
         this.updateSeries();
         this.updatechart = this.updatechart + 1;
     };

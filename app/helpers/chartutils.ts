@@ -27,6 +27,10 @@ export class ScaleUtil{
         scatter:{
             xaxis:"auto",
             yaxis:"auto"
+        },
+        stacked:{
+            xaxis:"ordinal",
+            yaxis:"auto"            
         }
     };
     

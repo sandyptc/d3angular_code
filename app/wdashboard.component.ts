@@ -45,6 +45,7 @@ import * as d3 from 'd3';
                         <option value="donutpie">Donut Chart</option>
                         <option value="scatter">Scatter Chart</option>
                         <option value="table">Table</option>
+                        <option value="stacked">Stacked Bar Chart</option>
                     </select>
                 </article>
             	<article>

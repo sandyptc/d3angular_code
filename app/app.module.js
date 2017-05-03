@@ -24,6 +24,7 @@ var wcomboseries_component_1 = require("./wcomboseries.component");
 var wscatterseries_component_1 = require("./wscatterseries.component");
 var data_service_1 = require("./service/data.service");
 var wdashboard_component_1 = require("./wdashboard.component");
+var wstackedcolumnseries_component_1 = require("./wstackedcolumnseries.component");
 var http_1 = require("@angular/http");
 var forms_1 = require("@angular/forms");
 var AppModule = (function () {
@@ -35,9 +36,9 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule],
         declarations: [wdashboard_component_1.WDashboardComponent, wsvgchartcontainer_component_1.WSvgChartContainer, wchartcontainer_component_1.WChartContainerComponent, waxis_component_1.WAxisComponent,
-            wcolumnseries_component_1.WColumnSeriesComponent, wrowseries_component_1.WRowSeriesComponent, wlineseries_component_1.WLineSeriesComponent,
-            wareaseries_component_1.WAreaSeriesComponent, wpieseries_component_1.WPieSeriesComponent, wpiedonutseries_component_1.WPieDonutSeriesComponent, wlegend_component_1.WLegendComponent,
-            wcomboseries_component_1.WComboSeriesComponent, wscatterseries_component_1.WScatterSeriesComponent, wtablecontainer_component_1.WTableContainerComponent, wtable_component_1.WTableComponent],
+            wcolumnseries_component_1.WColumnSeriesComponent, wrowseries_component_1.WRowSeriesComponent, wlineseries_component_1.WLineSeriesComponent, wareaseries_component_1.WAreaSeriesComponent,
+            wpieseries_component_1.WPieSeriesComponent, wpiedonutseries_component_1.WPieDonutSeriesComponent, wlegend_component_1.WLegendComponent, wcomboseries_component_1.WComboSeriesComponent,
+            wscatterseries_component_1.WScatterSeriesComponent, wtablecontainer_component_1.WTableContainerComponent, wtable_component_1.WTableComponent, wstackedcolumnseries_component_1.WStackedColumnSeriesComponent],
         providers: [data_service_1.DataService],
         bootstrap: [wdashboard_component_1.WDashboardComponent]
     })

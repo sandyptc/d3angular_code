@@ -256,6 +256,7 @@ export class WChartContainerComponent {
              if(this.elementRef.nativeElement.id==='c2'){ this.setRowData(metadata);}
         }
        this.metadata = this.dataProcessor.createSeries(this.dataService, metadata);
+       console.log("Metadata=",metadata);
        this.updateSeries();
        this.updatechart=this.updatechart+1;
     }
