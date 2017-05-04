@@ -1,6 +1,7 @@
 import { Component, Injectable, OnChanges, ElementRef, Input } from '@angular/core';
 import { Meta, DataSeries } from './helpers/chartdtos';
 import { DataService } from './service/data.service';
+import {DataProcessor, ScaleUtil} from './helpers/chartutils';
 import * as d3 from 'd3';
 
 @Component({
@@ -15,7 +16,7 @@ export class WStackedColumnSeriesComponent implements OnChanges {
     @Input("height") height;
     @Input("scale") scale:any;
 
-    constructor(public elementRef:ElementRef, public dataService:DataService) {
+    constructor(public elementRef:ElementRef, public dataProcessor:DataProcessor, public dataService:DataService) {
         this.d3Element = d3.select(this.elementRef.nativeElement);
     }
 
@@ -37,7 +38,8 @@ export class WStackedColumnSeriesComponent implements OnChanges {
      * 
      */
     drawSeries(xData:Array<any>)  {
-        var color = d3.scale.category10();
+        var dataProcessor: DataProcessor = this.dataProcessor;
+        var metadata: Meta = this.metadata;
 
         var d3Element:any = d3.select(this.elementRef.nativeElement);
         var scalex=this.scale.scalex;
@@ -69,7 +71,7 @@ export class WStackedColumnSeriesComponent implements OnChanges {
                         .enter().append("g")
                         .attr("class", "stack")
                         .style("fill", function (d, i) {
-                        return color(i as any);
+                    return dataProcessor.colorscales(metadata.graphColor,i + 1);
             });
 
         layer.selectAll("rect")
